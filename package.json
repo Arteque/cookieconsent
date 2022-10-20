@@ -1,0 +1,26 @@
+{
+  "name": "cookieconsent",
+  "version": "0.0.1",
+  "description": "Cookie Consent script to use localy and manually",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/_public/style/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arteque/cookieconsent.git"
+  },
+  "keywords": [
+    "Cookie",
+    "Consent"
+  ],
+  "author": "Ahmed Lemssiah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arteque/cookieconsent/issues"
+  },
+  "homepage": "https://github.com/Arteque/cookieconsent#readme",
+  "dependencies": {
+    "node": "^19.0.0"
+  }
+}
