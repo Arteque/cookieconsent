@@ -26,6 +26,24 @@
             justify-content: space-around;
             align-items: center;
         }
+        .amd-cookie-consent-container .amd-cookie-consent-table{
+            display:table;
+            width: 100%;
+            border:1px solid #fff;
+        }
+        .amd-cookie-consent-container .amd-cookie-consent-table-header{
+            background-color:red;
+        }
+        .amd-cookie-consent-container .amd-cookie-consent-talbe-row{
+            display: table-row;
+        }
+        .amd-cookie-consent-container .amd-cookie-consent-table-cell{
+            display: table-cell;
+            background-color: #fff;
+            min-height: 1rem;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
     </style>
     <div class="amd-cookie-consent-container">
         <header class="amd-cookie-consent-header">
@@ -77,10 +95,44 @@
                         </div>
                     </form>
                     <div class="amd-cookie-consent-listing-details">
-                        <div class="amd-cookie-consent-toggle-btn hide">
+                        <button class="amd-cookie-consent-toggle-btn hide">
                             Cookies Details <span class="amd-cookie-consent-status">Zeigen</span>
-                        </div>
-                        
+                        </button>
+                        <!---->
+                        <details open>
+                            <summary style="cursor: pointer;">
+                                <span class="icon">
+                                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+                                </span>
+                                <span class="text">
+                                    Wichtig
+                                </span>
+                            </summary>
+                            <div class="amd-cookie-consent-table">
+                                <div class="amd-cookie-consent-talbe-row amd-cookie-consent-table-header">
+                                    <div class="amd-cookie-consent-table-cell">
+                                        Cookie Name
+                                    </div>
+                                    <div class="amd-cookie-consent-table-cell">
+                                        Beschreibung
+                                    </div>
+                                    <div class="amd-cookie-consent-table-cell">
+                                        Dauer
+                                    </div>
+                                </div>
+                                <div class="amd-cookie-consent-talbe-row amd-cookie-consent-table-data" data-title="Script">
+                                    <div class="amd-cookie-consent-table-cell cookie-name">
+                                        Script
+                                    </div>
+                                    <div class="amd-cookie-consent-table-cell cookie-details">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione possimus nobis voluptatum voluptate mollitia ab dolorem, cum odit maxime quidem!
+                                    </div>
+                                    <div class="amd-cookie-consent-table-cell cookie-dauer">
+                                        30 Tage
+                                    </div>  
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </section>
             </article>
